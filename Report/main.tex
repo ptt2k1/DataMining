@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+\usepackage{Shapes}
+\usepackage[utf8]{vietnam}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{diagbox}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{tasks}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+%%%%%%%%%%%%
+% \usepackage{indentfirst}
+\setlength{\parindent}{0pt}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes.geometric, arrows}
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\medskip
+   \textbf{Ví dụ~\theexample : #1} \rmfamily}{\medskip}
+
+\newcounter{defs}[subsection]
+\newenvironment{defs}[1][]{\refstepcounter{defs}
+   \textbf{Định nghĩa~\thesubsection.\thedefs : #1} \rmfamily}
+
+\newcounter{clause}[subsection]
+\newenvironment{clause}[1][]{\refstepcounter{clause}\medskip
+   \textbf{Mệnh đề~\thesubsection.\theclause : #1} \rmfamily}{\medskip}
+%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titlesec}
+\usepackage{mdframed}
+
+\usepackage{relsize}
+
+\usepackage{mathptmx}
+\usepackage{amsthm}
+\usepackage{multicol}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Định nghĩa}[section]
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Định lý}[section]
+
+\newtheorem*{remark}{Nhận xét}
+
+\newtheorem{vd}{Ví dụ}[section]
+\newtheorem{bt}{Bài tập}[section]
+\newtheorem{tc}{Tính chất}[section]
+\newtheorem{md}{Mệnh đề}[section]
+\newtheorem{cy}{Chú ý}[section]
+%%%%%%%%%%%%%%%%%%%
+
+
+%\fancyhead[LO, RE]{Toán Tin 01 - k64}
+%\fancyhead[LE, RO, font=\bfseries, color=HustRed]{MI4024 - Lớp 129852}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{Gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{cadmiumorange}{rgb}{0.93, 0.53, 0.18}
+\definecolor{sami}{RGB}{1,90,143}
+\lstdefinestyle{mystyle}{
+	frame=shadowbox,
+  language=SQL,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\normalsize\ttfamily},
+  numbers=left,
+  numberblanklines=true,
+  numbersep=5pt,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{sami},
+  morekeywords={USE},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{cadmiumorange},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=2,
+  keepspaces=true
+}
+\lstset{style=mystyle}
+\title{\begin{center}
+    Phân loại sản phẩm thời trang
+\end{center}}
+\subtitle{\begin{center}
+    KHAI PHÁ DỮ LIỆU
+\end{center}%\\Chủ đề:\\ SMS Spam - Xử lý tin nhắn Spam 
+}
+\author{
+Sinh viên thực hiện: & Phạm Thu Trang\\
+MSSV: & 20195931\\[0.5cm]
+%MSSV: & 20195931\\
+Mã lớp: & 137977\\
+Mã học phần: & MI5140\\
+Học kỳ: & 20221
+}
+\info{\textbf{Giảng viên hướng dẫn: TS.Trần Ngọc Thăng} 
+}
+\logo[scale=0.62]{logotitle.png}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+%---------------------------------------------------------------------
+\newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,      %|
+leftmargin=-5pt,rightmargin=-5pt,                                   %|
+innerleftmargin=5pt,innerrightmargin=5pt]{mybox}                    %|
+%---------------------------------------------------------------------
+\begin{document}
+\maketitlepage
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+%\listoftables
+
+\newpage
+
+\input{contents/Chapter đầu}
+\newpage
+\input{contents/Chapter 1.tex}
+\newpage
+\input{contents/Chapter 2.tex}
+\newpage
+\input{contents/Chapter 2a.tex}
+\newpage
+\input{contents/Chapter 3.tex}
+\newpage
+\input{contents/Chapter 4.tex}
+\newpage
+\input{contents/Chapter 5.tex}
+\newpage
+\input{contents/Chapter cuối}
+
+
+\end{document} 
